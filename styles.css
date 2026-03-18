@@ -162,8 +162,8 @@ button {
     max-width: 1200px;
     /* ERROR 3: El contenido no está centrado en la página
        PISTA: Falta una propiedad que centra elementos de bloque horizontalmente */
-    margin: 0 auto; /*ERROR 3 PARCHADO*/
     padding: 0 var(--spacing-lg);
+     margin: 0 auto; /*ERROR 3 PARCHADO*/
 }
 
 .section {
@@ -231,6 +231,7 @@ button {
 .btn--primary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-xl), 0 0 30px rgba(14, 165, 233, 0.4);
+    box-shadow: var(--shadow-md); /*ERROR 5*/
 }
 
 .btn--outline {
@@ -285,6 +286,7 @@ button {
        PISTA: Falta una propiedad de flexbox que alinea items en el eje transversal */
     justify-content: space-between;
     height: 100%;
+    align-items: center; /*ERROR 6 PARCHADO*/
 }
 
 .nav__logo {
