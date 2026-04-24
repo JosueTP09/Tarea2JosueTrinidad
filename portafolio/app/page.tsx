@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./Components / Header/Header";
 import Inicio from "./Components / Inicio/Inicio";
 import Intereses from "./Components / Intereses/Intereses";
+import CV from "./Components / CV/CV";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Inicio />
       <Intereses />
+      <CV />
     </>
   );
 }
